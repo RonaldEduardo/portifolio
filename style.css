@@ -53,8 +53,35 @@ body {
     font-size: 1.5em;
     transition: all 300ms;
 }
-
-.contatcs-header {
+.contacts{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    align-items: center;
+}
+.contacts a{
+    opacity: 0;
+    transition: all 1s;
+}
+.contacts a:hover{
+    color: #0070FF;
+    font-size: 1.1rem;
+    transition: all 150ms;
+}
+.email{
+    position: absolute;
+    top: 40px;
+}
+.phone{
+    position: absolute;
+    top: 65px;
+}
+.linkedin{
+    position: absolute;
+    top: 90px;
+}
+.contacts-header {
     background-color: gold;
     border-radius: 12px;
     text-align: center;
@@ -67,9 +94,8 @@ body {
     padding: 5px;
 }
 
-.contatcs-header:hover {
+.contacts-header:hover {
     color: #0070FF;
-    font-size: 1.5rem;
     transition: all 150ms;
 }
 .icons {
@@ -83,7 +109,7 @@ body {
 .icons i:hover{
     color: #0070FF;
     font-size: 1.5rem;
-    transition: all 150ms;  
+    transition: all 150ms;
 }
 
 section {
